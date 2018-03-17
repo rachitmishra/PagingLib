@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="in.ceeq.paginglib.vo.BaseViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/layout_error_retry_data_binding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="@{viewModel.errorViewVisible}"
+        tools:visibility="visible">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/error_message"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_activity_margin"
+            android:gravity="center"
+            android:paddingLeft="@dimen/default_activity_margin"
+            android:paddingRight="@dimen/default_activity_margin"
+            android:text="@{viewModel.emptyMessage}"
+            tools:text=":)"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_retry_data_binding"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/default_activity_margin"
+            android:onClick="@{(view) -> viewModel.onRetry()}"
+            android:text="@string/btn_retry"
+            android:textAllCaps="true"
+            tools:text="Retry"/>
+
+    </LinearLayout>
+</layout>

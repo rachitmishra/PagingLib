@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="in.ceeq.paginglib.vo.BaseViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/layout_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="@{viewModel.progressViewVisible}"
+        tools:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="64dp"
+            android:layout_height="12dp"
+            android:indeterminate="true"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/progress_message"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_activity_margin"
+            android:layout_marginStart="@dimen/default_activity_margin"
+            android:layout_marginTop="@dimen/default_activity_margin"
+            android:text="@{viewModel.progressMessage}"
+            tools:text="Loading..."/>
+
+
+    </LinearLayout>
+</layout>

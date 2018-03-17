@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PagingLib</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="default_error_text">Bummer!</string>
+    <string name="default_empty_text">No content!</string>
+    <string name="btn_retry">Retry</string>
+</resources>
