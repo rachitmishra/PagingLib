@@ -30,7 +30,7 @@ class MainViewModel(
 
     fun retry() {
         if (connectionUtils.isNetNotConnected && posts.value == null) {
-            baseViewManagerImpl.handleError(true)
+            handleError(true)
             return
         }
 
@@ -43,7 +43,7 @@ class MainViewModel(
 
     fun getPosts() {
         if (connectionUtils.isNetNotConnected) {
-            baseViewManagerImpl.handleError(true)
+            handleError(true)
             return
         }
 
@@ -53,7 +53,7 @@ class MainViewModel(
 
     fun getComments() {
         if (connectionUtils.isNetNotConnected) {
-            baseViewManagerImpl.handleError(true)
+            handleError(true)
             return
         }
 
