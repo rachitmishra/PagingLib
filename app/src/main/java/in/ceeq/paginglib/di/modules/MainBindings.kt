@@ -1,6 +1,5 @@
 package `in`.ceeq.paginglib.di.modules
 
-import `in`.ceeq.paginglib.MainModule
 import `in`.ceeq.paginglib.di.viewmodel.ViewModelKey
 import `in`.ceeq.paginglib.view.MainActivity
 import `in`.ceeq.paginglib.view.MainViewModel

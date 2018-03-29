@@ -7,7 +7,7 @@ import android.arch.paging.DataSource
 
 class PostDataSourceFactory(
         private val mainApi: MainApi,
-        private val baseScheduler: BaseScheduler) : DataSource.Factory<Int, Post> {
+        private val baseScheduler: BaseScheduler) : DataSource.Factory<Int, Post>() {
     val sourceLiveData = MutableLiveData<PostDataSource>()
 
     override fun create(): DataSource<Int, Post> {
