@@ -1,7 +1,7 @@
-package `in`.ceeq.paginglib
+package `in`.ceeq.paginglib.view
 
 import `in`.ceeq.paginglib.data.MainRepository
-import `in`.ceeq.paginglib.data.Post
+import `in`.ceeq.paginglib.data.entity.Post
 import `in`.ceeq.paginglib.util.BaseViewManager
 import `in`.ceeq.paginglib.util.BaseViewManagerImpl
 import `in`.ceeq.paginglib.util.ConnectionUtils

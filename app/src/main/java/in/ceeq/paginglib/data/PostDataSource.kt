@@ -1,5 +1,6 @@
 package `in`.ceeq.paginglib.data
 
+import `in`.ceeq.paginglib.data.entity.Post
 import `in`.ceeq.paginglib.util.BaseScheduler
 import `in`.ceeq.paginglib.vo.NetworkState
 import android.arch.lifecycle.MutableLiveData

@@ -1,5 +1,6 @@
-package `in`.ceeq.paginglib
+package `in`.ceeq.paginglib.view
 
+import `in`.ceeq.paginglib.R
 import `in`.ceeq.paginglib.databinding.ListItemPostBinding
 import android.databinding.DataBindingUtil
 import android.support.v7.widget.RecyclerView

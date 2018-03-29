@@ -1,6 +1,7 @@
-package `in`.ceeq.paginglib
+package `in`.ceeq.paginglib.view
 
-import `in`.ceeq.paginglib.data.Post
+import `in`.ceeq.paginglib.R
+import `in`.ceeq.paginglib.data.entity.Post
 import `in`.ceeq.paginglib.vo.NetworkState
 import android.arch.paging.PagedListAdapter
 import android.support.v7.util.DiffUtil
